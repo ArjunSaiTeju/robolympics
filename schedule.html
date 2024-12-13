@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .navbar .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        img.responsive{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar .logo span {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .col{
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar .menu-toggle {
+            display: none;
+            background-color: #575757;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                gap: 5px;
+                width: 100%;
+                display: block;
+            }
+
+            .navbar .menu-toggle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+            <samp><h1 class="col">ROBOLYMPICS<h1></samp>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="lead.html">Leaderboard</a>
+            <a href="schedule.html">Scedule</a>
+        </div>
+    </div>
+
+    <center><img class="responsive" src="sced.jpg" width="60%" height="80%"></center>
+
+</body>
+</html>

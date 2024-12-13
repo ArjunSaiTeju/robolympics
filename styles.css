@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Setup */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f1f4f8; /* Soft grey background */
+    color: #333;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Container for the leaderboard */
+.container {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #4a90e2; /* Soft blue color */
+    text-transform: uppercase;
+}
+
+/* Leaderboard Table */
+.leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+td {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}

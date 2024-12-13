@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .navbar .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        img.responsive{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar .logo span {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .col{
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar .menu-toggle {
+            display: none;
+            background-color: #575757;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                gap: 5px;
+                width: 100%;
+                display: block;
+            }
+
+            .navbar .menu-toggle {
+                display: none;
+            }
+        }
+/*        img grid*/
+         .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-grid .grid-item {
+            text-align: center;
+        }
+
+        .image-grid img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-grid .description {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+            <samp><h1 class="col">ROBOLYMPICS<h1></samp>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="lead.html">Leaderboard</a>
+            <a href="schedule.html">Scedule</a>
+        </div>
+    </div>
+
+    <center><img class="responsive" src="robo.png"></center>
+    <br>
+    <hr>
+    <center>
+        <h2>add text here</h2>
+        <p>Add paragraph here</p>
+    </center>
+    <div class="image-grid" class="responsive">
+        <div class="grid-item">
+            <img src="img1.jpg" alt="Image 1">
+            <div class="description">Description for Image 1</div>
+        </div>
+        <div class="grid-item">
+            <img src="img1.jpg" alt="Image 2">
+            <div class="description">Description for Image 2</div>
+        </div>
+        <div class="grid-item">
+            <img src="img1.jpg" alt="Image 3">
+            <div class="description">Description for Image 3</div>
+        </div>
+    </div>
+</body>
+</html>
